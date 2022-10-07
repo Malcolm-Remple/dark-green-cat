@@ -50,7 +50,7 @@ onBeforeMount(() => {
         <!-- Close Content Wrapper -->
 
         <!-- Video -->
-        <video :poster="data.video.poster_url" autoplay loop class="w-full lg:w-7/12">
+        <video autoplay loop muted :poster="data.video.poster_url" class="w-full lg:w-7/12">
           <source :src="data.video.webm_url" type="video/webm">
           <source :src="data.video.mp4_url" type="video/mp4">
         </video>
